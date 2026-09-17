@@ -83,6 +83,26 @@
     <p class="privacy"><strong>How this works:</strong> this page loads libarchive, compiled to WebAssembly, and runs it in a background worker in your browser tab. Your archive file is read locally and is never sent to any server.</p>
   </div>
 
+
+  <div class="card faq">
+    <h2>Troubleshooting</h2>
+    <details><summary>A password-protected RAR or 7-Zip archive won't extract</summary>
+      <p>This page can list what's inside an encrypted archive, but extracting a password-protected archive isn't supported here yet. Use a desktop tool such as 7-Zip or WinRAR, which can prompt for the password.</p>
+    </details>
+    <details><summary>Extraction seems to hang on a very large archive</summary>
+      <p>The whole archive is decompressed inside your browser tab's memory. A multi-gigabyte archive can be slow, or exhaust the tab's available memory. For very large archives, a desktop tool like 7-Zip will generally be faster and more reliable.</p>
+    </details>
+  </div>
+
+  <div class="card cli">
+    <h2>Prefer the command line?</h2>
+    <div class="cli-block">7z x archive.7z
+unrar x archive.rar
+tar -xf archive.tar.gz</div>
+    <p class="privacy">This page is powered by libarchive, the same open-source engine behind the 7-Zip and unrar command-line tools.</p>
+  </div>
+
+
   <div id="ad-slot" data-aads-unit="2455561"></div>
 </main>
 <script type="module" src="app.js"></script>
