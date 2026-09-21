@@ -58,6 +58,30 @@
   .privacy strong{color:var(--text);}
   .formats{color:var(--muted);font-size:.8rem;margin-top:.6rem;}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "A password-protected RAR or 7-Zip archive won't extract",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This page can list what's inside an encrypted archive, but extracting a password-protected archive isn't supported here yet. Use a desktop tool such as 7-Zip or WinRAR, which can prompt for the password."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Extraction seems to hang on a very large archive",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The whole archive is decompressed inside your browser tab's memory. A multi-gigabyte archive can be slow, or exhaust the tab's available memory. For very large archives, a desktop tool like 7-Zip will generally be faster and more reliable."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header>
